@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="HomePage.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+      <div class="nav">
+          <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="clients.asp">Add/Remove Clients</a></li>
+            <li><a href="clientsinfo.asp">Search/Edit Client Info</a></li>
+            <li><a href="finances.asp">Finances</a></li>
+            <li><a href="admin.asp">Add/Remove Admins</a></li>
+          </ul>
+        </div>
+
+    <h1>STACEY'S CLEANING APP!</h1>
+    
+  <div id="calendar"> 
+    <div class="header">      
+        <span class="left button" id="prev">&#10094;</span>
+        <span class="month" id="label"></span>
+        <span class="right button" id="next">&#10095;</span>
+    </div>
+    
+    <table id="days">
+      <tr>
+        <td>Su</td>
+        <td>Mo</td>
+        <td>Tu</td>
+        <td>We</td>
+        <td>Th</td>
+        <td>Fr</td>
+        <td>Sa</td>
+      </tr>
+    </table>
+    
+  <div id="frame">
+    <table class="curr">
+    </table>
+  </div>
+</div> 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="HomePage.js"></script>
+    <script>
+      var cal = CALENDAR(); 
+      cal.init();
+    </script>
+  </body>
+</html>
